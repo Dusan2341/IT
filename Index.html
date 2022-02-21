@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+	<style type="text/css">
+		
+		body {
+			background-color: #050210;
+			margin: 0;
+		}
+
+		#box1 {
+			 margin: 0 auto;
+			width:300px;
+			height:300px;
+			border:  5px;
+			position: absolute;
+  			top: 50%;
+  			left: 50%;
+  			transform: translate(-50%, -50%);
+  			border:transparent;
+  			border-radius:100%;
+  			background: linear-gradient(to bottom, #fb5dad 0%, #55fb9f 50% , #b97aff 100%);
+  			transform-origin:center;
+  			z-index: 1;
+
+  			animation-name: spin;
+  animation-duration: 1000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; 
+		}
+
+		#box1::before {
+			 margin: 0 auto;
+		  	content: "";
+		  	width:300px;
+			height:300px;
+			border:  5px;
+			position: absolute;
+  			top: 50%;
+  			left: 50%;
+  			transform: translate(-50%, -50%);
+  			border:transparent;
+  			border-radius:100%;
+		    background: linear-gradient(to bottom, #fb5dad 0%, #55fb9f 50% , #b97aff 100%);
+		 	filter: blur(20px);
+		 	transform-origin:center;
+		 	z-index: -10;
+
+		  animation-name: spin;
+  animation-duration: 2500ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; 
+
+		}
+
+
+		@keyframes spin {
+    0% {
+    transform: translateX(-50%, -50%) rotate(0deg);
+
+}
+ 
+
+100% {
+    transform: translate(-50%, -50%)  rotate(360deg);
+    
+}
+
+
+
+}
+
+#box2{
+		border:  2px;
+		background-color:  #050210;
+		border-radius:100%;
+		width:250px;
+		height: 250px;
+		top: 50%;
+  		left: 50%;
+  		transform: translate(-50%, -50%);
+  		position: absolute;
+  		z-index: 2;
+	}
+
+
+#box2::before{
+		content: "";
+		color:#252645;
+		background-color: #252645;
+		width:1px;
+		height:1px;
+		border: 5px;
+		border-radius:100%;
+		position: absolute;
+  		top: 50%;
+  		left: 50%;
+  		transform: translate(-50%, -50%);
+
+  		animation-name: grow;
+  animation-duration: 1000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; 
+	}
+
+
+	@keyframes grow {
+    0% {
+    transform: translateX(-50%, -50%) scale(0);
+    opacity: 1;
+
+}
+ 
+
+100% {
+    transform: translate(-50%, -50%)  scale(250);
+    opacity: 0;
+    
+}
+
+
+	</style>
+
+
+<body>
+	<div id="box1"></div>
+	<div id="box2"></div>
+		
+
+
+
+	</div>
+</body>
+</html>
