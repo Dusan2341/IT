@@ -1,0 +1,330 @@
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title></title>
+
+	<style type="text/css">
+
+	body{
+		margin:0vh auto;
+		justify-content: center;
+		 align-items: center;
+	}
+
+	#container{
+
+		position: absolute;
+        left: 50%;
+        top: 40%;
+        transform: translate(-50%, -50%);
+        width:95%;
+        border: 2px;
+        align-items: center;
+        justify-content: center;
+        
+
+	}
+
+	div {
+	    float: left;
+	}
+
+	.flexbox {
+		display: flex;
+		border: 1px solid black;
+		border-radius: 10%;
+		margin: 20px;
+		height: 160px;
+		width: 240px;
+		background-color: lightblue;
+		  display: flex;
+		  align-items: center;
+		  justify-content: center;
+	}
+
+	.flexbox > div {
+		width: 80px;
+		height: 70px;
+		margin: 10px;
+	}
+
+	.flexbox::before {
+		content:"Image Title";
+		background-color:white;
+		 transform: translate(0px, 57px);
+		height: 30px;
+		width: 180px;
+		 position: absolute;
+		 border: solid black 1px;
+		 border-bottom-right-radius: 10px;
+		 border-bottom-left-radius: 10px;
+		 text-align: center;
+	}
+
+
+
+	img {
+
+		height: 150px;
+	}
+
+
+@media only screen and (max-width: 300px) {
+
+  .flexbox { 
+    margin-left: 10px;
+    height: 70px;
+		width: 110px;	
+  }
+  #container{
+  	margin-top: 290px;
+  }
+  img {
+
+		height: 100px;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+
+  .flexbox { 
+    margin-left: 50px;	
+  }
+  #container{
+  	margin-top: 290px;
+  }
+}
+
+@media only screen and (min-width: 500px) {
+
+  .flexbox { margin-left: 100px;		
+  }
+  #container{
+  	margin-top: 500px;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+
+  .flexbox { margin-left: 40px;	
+  		height: 90px;
+		width: 120px;	
+  }
+  #container{
+  	margin-top: 50px;
+
+  }
+  img {
+
+		height: 80px;
+	}
+}
+
+@media only screen and (min-width: 700px) {
+
+  .flexbox { margin-left: 40px;	
+  		height: 100px;
+		width: 160px;	
+  }
+  #container{
+  	margin-top: 50px;
+
+  }
+
+  img {
+
+		height: 100px;
+	}
+}
+
+@media only screen and (min-width: 930px) {
+
+  .flexbox { margin-left: 90px;	
+  		height: 100px;
+		width: 160px;	
+  }
+  #container{
+  	margin-top: 50px;
+
+  }
+
+  img {
+
+		height: 100px;
+	}
+}
+
+
+@media only screen and (min-width: 1000px) {
+
+  .flexbox { margin-left: 250px;	
+		height: 120px;
+		width: 180px;
+		margin-top: 20px	
+}
+
+img {
+
+		height: 150px;
+	}
+}
+
+
+@media only screen and (min-width: 900px) {
+
+  .flexbox { margin-left: 100px;	
+  		height: 100px;
+		width: 160px;	
+  }
+  #container{
+  	margin-top: 50px;
+
+  }
+
+  img {
+
+		height: 100px;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+
+  .flexbox { margin-left: 150px;	
+		height: 120px;
+		width: 180px;
+		margin-top: 20px	
+}
+
+img {
+
+		height: 150px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1000px) {
+
+.flexbox::before {
+		
+		 transform: translate(0px, 40px);
+		height: 22px;
+		width: 160px;
+	}
+ 
+}
+
+@media only screen and (max-width:700px) {
+	.flexbox::before {
+		transform: translate(0px,40px);
+		height: 22px;
+		width:120px;
+	}
+}
+
+@media only screen and (max-width:500px) {
+	.flexbox::before {
+		transform: translate(0px,65px);
+		height: 35px;
+		width:240px;
+	}
+}
+
+
+@media only screen and (max-width:600px) {
+	.flexbox::before {
+		transform: translate(0px,70px);
+		height: 35px;
+		width:240px;
+	}
+}
+
+@media only screen and (max-width: 300px) {
+
+.flexbox::before {
+		
+		 transform: translate(0px, 30px);
+		height: 22px;
+		width: 110px;
+	}
+ 
+}
+@media only screen and (min-width: 1000px) {
+
+.flexbox::before {
+		
+		 transform: translate(0px, 40px);
+		height: 22px;
+		width: 160px;
+	}
+ 
+}
+
+
+@media only screen and (min-width: 1200px) {
+
+.flexbox::before {
+		
+		 transform: translate(0px, 50px);
+		height: 22px;
+		width: 180px;
+	}
+ 
+}
+
+@media only screen and (min-width: 1200px) {
+
+  .flexbox { margin-left: 150px;	
+		height: 120px;
+		width: 180px;
+		margin-top: 20px	
+}
+
+img {
+
+		height: 150px;
+	}
+}
+
+@media only screen and (min-width: 1300px) {
+
+  .flexbox { margin-left: 50px;	
+		height: 120px;
+		width: 180px;
+		margin-top: 20px	
+}
+
+img {
+
+		height: 150px;
+	}
+}
+	</style>
+</head>
+
+<body>
+
+<div id="container">
+
+	<div  class="flexbox"> <img src="placeholder-image.png"></div>
+	<div  class="flexbox"> <img src="placeholder-image.png"></div>
+	<div  class="flexbox"> <img src="placeholder-image.png"></div>
+	<div  class="flexbox"> <img src="placeholder-image.png"></div>
+	<div  class="flexbox"> <img src="placeholder-image.png"></div>
+	<div  class="flexbox"> <img src="placeholder-image.png"></div>
+	<div  class="flexbox"> <img src="placeholder-image.png"></div>
+	<div  class="flexbox"> <img src="placeholder-image.png"></div>
+	<div  class="flexbox"> <img src="placeholder-image.png"></div>
+	<div  class="flexbox"> <img src="placeholder-image.png"></div>
+
+</div>
+
+</body>
+</html>
